@@ -19,9 +19,8 @@ export default function Home() {
       <nav className="flex items-center justify-between">
         {/* Logo Section */}
         <div className="flex items-center space-x-2">
-          <div className="flex items-center">
-            <Image src="/Group.png" alt="Logo" width={200} height={50} className="h-10" />
-            <Image src="/Group (1).png" alt="Logo 2" width={200} height={50} className="h-10 -translate-x-3" />
+          <div className="flex items-center w-[80%]">
+            <Image src="/image.png" alt="Logo" width={200} height={100} className="h-10 w-auto" />
           </div>
         </div>
 
@@ -179,94 +178,86 @@ export default function Home() {
 </section>
 
 
-      <section className="bg-[#F0F5FD] py-20">
-        <div className="container mx-auto px-6 ">
-          <h2 className={`text-5xl font-semibold text-center mb-28 ${montserrat.className}`}>Our Services</h2>
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="bg-white flex flex-col justify-center items-center rounded-2xl shadow-lg p-8 pt-0 border border-black  ">
-              <Image src="/Frame1.png" alt="Web Design" width={90} height={80} className=" scale-150 -translate-y-1/2" />
-              <h3 className={`text-2xl text-[#004D5C] font-semibold text-center mb-4 ${montserrat.className}`}>Web Design</h3>
-              <p className="text-gray-600 text-center mb-6">Landing pages for drivers and for company websites. Built with a clear conversion focus.</p>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-gray-700">Driver funnels and apply flows</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-gray-700">Complete company sites</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-gray-700">Hosting & analytics setup</span>
-                </li>
-              </ul>
-            </div>
+      <section className="bg-[#F0F5FD] py-12 sm:py-16 md:py-20">
+  <div className="container mx-auto px-4 sm:px-6">
+    <h2 className={`text-3xl sm:text-4xl md:text-5xl font-semibold text-center mb-16 sm:mb-20 ${montserrat.className}`}>
+      Our Services
+    </h2>
 
-            <div className="bg-white flex flex-col justify-center items-center rounded-2xl shadow-lg p-8 pt-0 border border-black  ">
-              <Image src="/Frame2.png" alt="Web Design" width={90} height={80} className=" scale-150  -translate-y-1/2" />
-              <h3 className={`text-2xl text-[#004D5C] font-semibold text-center mb-4 ${montserrat.className}`}>Branding</h3>
-              <p className="text-gray-600 text-center mb-6">Clean, consistent identity across every touchpoint so drivers and shippers remember you.</p>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-gray-700">Logos, colors, fonts, PDFs, letter decks</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-gray-700">Social profiles & templates</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-gray-700">Swag (hats, tees, decals) direction</span>
-                </li>
-              </ul>
-            </div>
-
-                          <div className="bg-white flex flex-col justify-center items-center rounded-2xl shadow-lg p-8 pt-0 border border-black  ">
-
-              <Image src="/Frame3.png" alt="Web Design" width={90} height={80} className=" scale-150 -translate-y-1/2" />
-              <h3 className={`text-2xl text-[#004D5C] font-semibold text-center mb-4 ${montserrat.className}`}>Social Media</h3>
-              <p className="text-gray-600 text-center mb-6">Professional presence that signals trust, with content calendars and engagement reporting.</p>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-gray-700">Cover photos & profile swap</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-gray-700">Content calendars & daily posting</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-gray-700">Engagement reporting</span>
-                </li>
-              </ul>
-            </div>
-
-                        <div className="bg-white flex flex-col justify-center items-center rounded-2xl shadow-lg p-8 pt-0 border border-black  ">
-
-              <Image src="/Frame4.png" alt="Web Design" width={90} height={80} className=" scale-150 -translate-y-1/2" />
-              <h3 className={`text-2xl text-[#004D5C] font-semibold text-center mb-4 ${montserrat.className}`}>PPC / Advertising</h3>
-              <p className="text-gray-600 text-center mb-6">Meta & Google campaigns for driver acquisition, with creative optimization.</p>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-gray-700">Campaign management & creative optimization</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-gray-700">Ongoing management & optimization</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-gray-700">Conversion tracking and dashboards</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-20 md:gap-10">
+      {[
+        {
+          icon: "/Frame1.png",
+          title: "Web Design",
+          desc: "Landing pages for drivers and for company websites. Built with a clear conversion focus.",
+          bullets: [
+            "Driver funnels and apply flows",
+            "Complete company sites",
+            "Hosting & analytics setup",
+          ],
+        },
+        {
+          icon: "/Frame2.png",
+          title: "Branding",
+          desc: "Clean, consistent identity across every touchpoint so drivers and shippers remember you.",
+          bullets: [
+            "Logos, colors, fonts, PDFs, letter decks",
+            "Social profiles & templates",
+            "Swag (hats, tees, decals) direction",
+          ],
+        },
+        {
+          icon: "/Frame3.png",
+          title: "Social Media",
+          desc: "Professional presence that signals trust, with content calendars and engagement reporting.",
+          bullets: [
+            "Cover photos & profile swap",
+            "Content calendars & daily posting",
+            "Engagement reporting",
+          ],
+        },
+        {
+          icon: "/Frame4.png",
+          title: "PPC / Advertising",
+          desc: "Meta & Google campaigns for driver acquisition, with creative optimization.",
+          bullets: [
+            "Campaign management & creative optimization",
+            "Ongoing management & optimization",
+            "Conversion tracking and dashboards",
+          ],
+        },
+      ].map((service, index) => (
+        <div
+          key={index}
+          className="bg-white flex flex-col items-center rounded-2xl shadow-lg p-6 sm:p-8 pt-0 border border-black"
+        >
+          <Image
+            src={service.icon}
+            alt={service.title}
+            width={90}
+            height={80}
+            className="scale:130 lg:scale-150 -translate-y-1/2"
+          />
+          <h3
+            className={`text-xl sm:text-2xl text-[#004D5C] font-semibold text-center mb-4 ${montserrat.className}`}
+          >
+            {service.title}
+          </h3>
+          <p className="text-gray-600 text-center mb-6 text-sm sm:text-base">{service.desc}</p>
+          <ul className="space-y-3">
+            {service.bullets.map((point, idx) => (
+              <li key={idx} className="flex items-start">
+                <CheckCircle2 className="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" />
+                <span className="text-sm text-gray-700">{point}</span>
+              </li>
+            ))}
+          </ul>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       <section className="bg-white py-20">
   <div className=" px-6">
@@ -447,8 +438,8 @@ export default function Home() {
       
       {/* Logo */}
       <div className="flex items-center space-x-0">
-        <Image src="/Group.png" alt="Logo Left" width={200} height={50} className="h-10" />
-        <Image src="/Group (2).png" alt="Logo Right" width={200} height={50} className="h-10 -translate-x-3" />
+        <Image src="/Group.png" alt="Logo Left" width={200} height={50} className="h-8 lg:h-10" />
+        <Image src="/Group (2).png" alt="Logo Right" width={200} height={50} className="h-8 lg:h-10 -translate-x-3" />
       </div>
 
       {/* Email and Social Icons */}
